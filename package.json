@@ -1,0 +1,30 @@
+{
+  "devDependencies":{
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0"
+  },
+  "name": "YouApplicationNameHere",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "homepage":"",
+  "author":{
+    "name":"bobwatcherx",
+    "email":"bobsample@gmail.com",
+    "url":"https://fakeweb.com"
+  },
+  "scripts":{
+    "start":"electron .",
+    "build":"electron-builder"
+  },
+  "build":{
+    "linux":{
+      "target":[
+        "snap",
+        "AppImage",
+        "deb",
+        "rpm"
+      ]
+    }
+  }
+}
